@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -29,10 +30,15 @@
             <div class="left-side">
                 <div class="menu" onclick="onhoverShowMenu()">
                     <i class="fa-solid fa-bars"></i>
-                    <a href="#">Manu</a>
+                    <a href="#">Menu</a>
                 </div>
                 <div id="menu-slide" class="a">
-                    <i class="fa-solid fa-xmark" onclick="menuclose()"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                    <a href="" id="list-link">Home</a>
+                    <a href="" id="list-link">About</a>
+                    <a href="" id="list-link">Contact-us</a>
+                    <a href="" id="list-link">Help</a>
+
                 </div>
                 <nav class="nav">
                     <ul class="ul">
@@ -60,31 +66,71 @@
     </header>
     <!--Body-->
     <section>
-        <div class="hero">
-            <div id="cursor"></div>
-
-            <img src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/a748fd9c-99ee-4300-9bf2-c19774b76c08___ffc57d589239c74ff8ec9bcc64aedc46.jpg"
-                alt="">
-
-        </div>
-        <div class="left-hero col-6">
-            <img class="logo"
-                src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/56cdabc2-5f68-4838-990c-6bc5c5ef72a3___dc3e28474b1368e69cc6533202be1617.svg"
-                alt="">
-            <span> World's Largest & Most Intelligent <br>External Display*</span>
-            <img class="logo"
-                src="https://motorolaimgrepo.vtexassets.com/arquivos/Moto-AI-Logo-color-white-ugp495py.svg" alt="">
-            <span style="display: flex; gap: 15px; font-size: 30px;">
-                <p style="text-decoration: line-through;">&#8377;99,999</p>
-                <p>&#8377;89,999^</p>
-            </span>
-            <div class="emi-price">
-                <p>No Cost EMI Starting at <span style="font-weight: 700;"> &#8377;5,278/-</span> per month^</p>
+        <div id="cursor"></div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="hero">
+                        <img src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/a748fd9c-99ee-4300-9bf2-c19774b76c08___ffc57d589239c74ff8ec9bcc64aedc46.jpg"
+                            alt="">
+                        <div class="left-hero col-6">
+                            <img class="logo ani-l"
+                                src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/56cdabc2-5f68-4838-990c-6bc5c5ef72a3___dc3e28474b1368e69cc6533202be1617.svg"
+                                alt="">
+                            <span class="ani-l"> World's Largest & Most Intelligent <br>External Display*</span>
+                            <img class="logo ani-l"
+                                src="https://motorolaimgrepo.vtexassets.com/arquivos/Moto-AI-Logo-color-white-ugp495py.svg"
+                                alt="">
+                            <span style="display: flex; gap: 15px; font-size: 30px;">
+                                <p style="text-decoration: line-through;" class="ani-l">&#8377;99,999</p>
+                                <p class="ani-l">&#8377;89,999^</p>
+                            </span>
+                            <div class="emi-price ani-l">
+                                <p>No Cost EMI Starting at <span style="font-weight: 700;"> &#8377;5,278/-</span> per
+                                    month^</p>
+                            </div>
+                            <span style="font-weight: 400; " class="ani-l">Sale in Live</span>
+                            <p style="color: white; font-size: 8px; margin-top: 80px;" class="ani-l">*within the
+                                Motorola Porfolio |
+                                <sup>^</sup>T&C
+                                apply. Cost including all offers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero">
+                        <img src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/21a6c4ca-f615-433c-ada3-40517168075d___29825b1a5664e283e097f16f049d2e56.jpg"
+                            alt="">
+                        <div class="left-hero col-6">
+                            <img class="logo ani-l"
+                                src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/55    5c81d9-a2bf-4c6d-9910-a4938bf1d511___0774e3dfc49d04c89b4900a77959a0f8.svg"
+                                alt="">
+                            <h2>ALL EYES ON YOU</h2>
+                            <span style="display: flex;"> <span style="color: #3e4989; font-weight: 700">3D Curved pOLED
+                                    Display</span><span style="color: #000; font-weight: 700">with </span><span
+                                    style="color: #3e4989; font-weight: 700" class="moto-g85-desc">Gorilla<sup>®</sup>
+                                    Glass
+                                    5</span></span>
+                            <span style="color: #000; font-weight: 700">Brilliant <span
+                                    style="color: #3e4989; font-weight: 700"> 50MP OIS Sony-LYTIA 600 </span>
+                                Camera</span>
+                            <span>From &#8377;16,999</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero">
+                        <img src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/6d4d4247-88a2-446e-98a2-95d2fd830643___2a9bdce841e4f4299dcd00c1bc7b096b.jpg"
+                            alt="">
+                    </div>
+                </div>
             </div>
-            <span style="font-weight: 400;">Sale in Live</span>
-            <p style="color: white; font-size: 8px; margin-top: 80px;">*within the Motorola Porfolio | <sup>^</sup>T&C
-                apply. Cost including all offers.</p>
+            <span class="swiper-button-next"></span>
+            <span class="swiper-button-prev"></span>
         </div>
+
+
     </section>
     <!--ad-->
     <section>
@@ -320,6 +366,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="sript.js"></script>
 
 </body>
