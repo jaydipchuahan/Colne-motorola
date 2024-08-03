@@ -137,25 +137,37 @@
     display: flex;
     gap: 20px;
     align-items: center;
+    cursor: pointer;
 }
 
 #menu-slide {
-    /* display: none */
-    width: 25%;
+    opacity: 0;
+    width: 500px;
     height: 100vh;
     position: fixed;
-    left: 0px;
+    left: - 500px;
     top: 0;
-    background-color: white;
-    box-shadow: 0 0 10px;
+    background-color: rgba(255, 255, 255, 0.637);
     transform: translate(-100%, 0);
     animation: Width-up 10s ease;
-
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
-
+#menu-slide #list-link{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 60px;
+    color: black;
+}
 #menu-slide i {
     font-size: 34px;
     padding: 5px;
+    cursor: pointer;
+
     position: absolute;
     right: 15px;
     top: 10px;
@@ -222,7 +234,31 @@
 
 }
 
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .left-hero {
+    text-align: left;
+
+    overflow: hidden;
     padding-top: 20px;
     z-index: 1;
     position: absolute;
