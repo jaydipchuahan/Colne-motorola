@@ -141,6 +141,7 @@
 }
 
 #menu-slide {
+    z-index: 9;
     opacity: 0;
     width: 500px;
     height: 100vh;
@@ -157,17 +158,18 @@
     align-items: center;
     gap: 20px;
 }
-#menu-slide #list-link{
+
+#menu-slide #list-link {
     text-decoration: none;
     cursor: pointer;
     font-size: 60px;
     color: black;
 }
+
 #menu-slide i {
     font-size: 34px;
     padding: 5px;
     cursor: pointer;
-
     position: absolute;
     right: 15px;
     top: 10px;
@@ -209,6 +211,58 @@
 
 .Header .left-side .nav .ul .list-items .list-link i {
     font-size: 12px;
+    transform: rotate(180deg);
+    transition: .5s linear;
+}
+
+
+.phones-list {
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top: 150px;
+    left: 0;
+    background-color: white;
+    display: none;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.phones-list .col-6 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.phones-list .col-6 .col-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.phones-list .col-3 h2 {
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+.phones-list .col-3 a {
+    text-decoration: none;
+    color: #001428;
+    font-size: 20px;
+    transform: scale(1);
+
+    transition: .2s linear;
+}
+
+.phones-list .col-3 a:hover {
+    transform: scale(0.95);
+}
+
+.phones-list .col-4 img {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.99);
+    object-fit: cover;
+
 }
 
 .Header .right-side {
