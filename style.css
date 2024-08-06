@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 #cursor {
     z-index: 1;
     width: 30px;
@@ -88,7 +89,7 @@
 
 .Header .Header-Top .input-group {
     display: flex;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.692);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.281);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -265,10 +266,188 @@
 
 }
 
+.Ear-Buds-list {
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    position: fixed;
+    left: 0px;
+    top: 150px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Ear-Buds-list .col-2 {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: .1s ease-in;
+    cursor: pointer;
+}
+
+.Ear-Buds-list .col-2:hover {
+    background-color: #3636361c;
+}
+
+.Ear-Buds-list .col-2 img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.Ear-Buds-list .col-2 a {
+    border-top: 1px solid rgba(0, 0, 0, 0.322);
+    width: fit-content;
+    padding: 10px 10px 0;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.Tab-list {
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    position: fixed;
+    left: 0px;
+    top: 150px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.Tab-list .col-1 {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: .1s ease-in;
+    cursor: pointer;
+}
+
+.Tab-list .col-1:hover {
+    background-color: #3636361c;
+}
+
+.Tab-list .col-1 img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Tab-list .col-1 a {
+    margin: 5px;
+    border-top: 1px solid rgba(0, 0, 0, 0.322);
+    width: fit-content;
+    padding: 10px 10px 0;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.Smart-Tv-list {
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    position: fixed;
+    left: 0px;
+    top: 150px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Smart-Tv-list .col-1 {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: .1s ease-in;
+    cursor: pointer;
+}
+
+.Smart-Tv-list .col-1:hover {
+    background-color: #3636361c;
+}
+
+.Smart-Tv-list .col-1 img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Smart-Tv-list .col-1 a {
+    margin: 5px;
+    border-top: 1px solid rgba(0, 0, 0, 0.322);
+    width: fit-content;
+    padding: 10px 10px 0;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.Smart-Applineces-list {
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    position: fixed;
+    left: 0px;
+    top: 150px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Smart-Applineces-list .col-1 {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: .1s ease-in;
+    cursor: pointer;
+}
+
+.Smart-Applineces-list .col-1:hover {
+    background-color: #3636361c;
+}
+
+.Smart-Applineces-list .col-1 img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Smart-Applineces-list .col-1 a {
+    margin: 5px;
+    border-top: 1px solid rgba(0, 0, 0, 0.322);
+    width: fit-content;
+    padding: 10px 10px 0;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
 .Header .right-side {
     padding-right: 30px;
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .Header .right-side a {
@@ -311,7 +490,6 @@
 
 .left-hero {
     text-align: left;
-
     overflow: hidden;
     padding-top: 20px;
     z-index: 1;
@@ -358,7 +536,7 @@
 
 .categories {
     width: 95%;
-    height: 60px;
+    height: auto;
     border: 1px solid rgba(0, 0, 0, 0.356);
     margin-top: 30px;
     display: flex;
@@ -369,7 +547,10 @@
 .categories-list {
     width: 20%;
     cursor: pointer;
-    height: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.205);
     transition: .3s;
 }
@@ -380,8 +561,6 @@
 
 .categories-list p {
     font-size: 27px;
-    text-align: center;
-    margin-top: 12px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -393,6 +572,7 @@
     display: flex;
     justify-content: center;
     gap: 70px;
+    cursor: pointer;
 }
 
 .Phone-Models {
@@ -442,25 +622,18 @@
     display: flex;
 }
 
-.Advertisement .LED-TV {
+.Advertisement .LED-TV,
+.Sound-system {
     width: 50%;
     height: 100%;
 }
 
-.Advertisement .LED-TV img {
+.Advertisement .LED-TV img,
+.Sound-system img {
     width: 100%;
     height: 100%;
 }
 
-.Advertisement .Sound-system {
-    width: 50%;
-    height: 100%;
-}
-
-.Advertisement .Sound-system img {
-    width: 100%;
-    height: 100%;
-}
 
 /* trending section */
 .title-box {
@@ -676,7 +849,6 @@ footer .social-media-section .social-media .icon-container {
     margin-top: 10px;
     align-items: center;
     justify-content: center;
-
 }
 
 footer .social-media-section .social-media .icon-container i {
@@ -752,4 +924,193 @@ footer .social-media-section .location a {
 .copy-right-container span img {
     width: 70px;
     height: 35px;
+}
+
+/* Product Section discount  */
+.Product-discount {
+    width: 100%;
+    height: 75px;
+    background-color: #333B42;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Product-discount .logo {
+    width: 88px;
+    height: 50px;
+}
+
+.Product-discount a {
+    text-decoration: none;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: black;
+
+}
+
+/* tablate size */
+@media only screen and (max-width: 768px) {
+    .Header {
+        width: 100%;
+    }
+
+    .Header .Header-Top {
+        gap: 15px;
+    }
+
+    .Header .left-side .nav {
+        display: none;
+    }
+
+    .Header .Header-Top .service-items {
+        gap: 4px;
+    }
+
+    .Header .Header-Top .service-items i {
+        font-size: 18px;
+    }
+
+    .Header .Header-Top .service-items a {
+        display: none;
+    }
+
+    .categories {
+        flex-wrap: wrap;
+        width: 100%;
+        overflow: scroll;
+        border: none;
+        gap: 10px;
+    }
+
+    .categories-list {
+        width: 40%;
+        height: 50px;
+    }
+
+    .Items {
+        flex-wrap: wrap;
+        height: 700px;
+        width: 100%;
+    }
+
+    .Advertisement {
+        flex-wrap: wrap;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .Advertisement .LED-TV,
+    .Advertisement .Sound-system {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Phone-section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Phone-section .Smartphones {
+        width: 300PX;
+    }
+    .left-hero{
+        transform: translate(-240px, -100%);
+        align-items: center;
+        }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .Header {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .Header .Header-Top {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+
+    .Header .Header-Top .input-group {
+        display: none;
+    }
+
+    .Phone-section {
+        gap: 20px;
+    }
+
+    .seaching-container .search h2 {
+        text-align: center;
+    }
+
+    .seaching-container .Subscription-box .input-group {
+        width: 320px;
+    }
+
+    .seaching-container .Subscription-box .input-group input {
+        width: 200px;
+        height: 35px;
+        font-size: 15px;
+        padding-left: 20px;
+
+    }
+
+    .seaching-container .Subscription-box .input-group a {
+        width: 40%;
+    }
+    footer .social-media-section{
+        gap: 20px;
+    }
+    footer .social-media-section .logo p {
+        font-size: 15px;
+    }
+
+    footer .social-media-section .logo img {
+        width: 120px;
+        height: 40px;
+    }
+
+    footer .social-media-section .social-media {
+        width: 300px;
+        text-align: center;
+    }
+
+    footer .social-media-section .social-media .icon-container i {
+        margin: 0 2px;
+        font-size: 22px;
+    }
+    footer .social-media-section .location{
+        gap: 10px;
+    }
+    .support-container{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .support-container .col-2{
+        gap: 6px;
+    }
+    .support-container .col-2 p{
+        font-size: 18px;
+    }
+    .support-container .col-2 a {
+        font-size: 14px;
+        text-align: justify;
+    }
+    .copy-right-container{
+        text-align: center;
+    }
+    .left-hero{
+    transform: translate(-240px, -100%);
+    align-items: center;
+    }
 }
