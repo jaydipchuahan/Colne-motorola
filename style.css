@@ -1003,6 +1003,7 @@ footer .social-media-section .location a {
     }
 
     .Advertisement {
+        width: 100%;
         flex-wrap: wrap;
         height: 400px;
         overflow: hidden;
@@ -1064,7 +1065,12 @@ footer .social-media-section .location a {
         padding-left: 20px;
 
     }
-
+    .Advertisement {
+        flex-wrap: wrap;
+        height: 400px;
+        width: 100%;
+        overflow: hidden;
+    }
     .seaching-container .Subscription-box .input-group a {
         width: 40%;
     }
