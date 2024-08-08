@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="Header">
+        <div class="Header-Top">
+            <img src="https://motorolain.vtexassets.com/arquivos/motorola-logo.png" alt="Logo" class="Logo">
+            <div class="input-group">
+                <input type="search" class="search" placeholder="What are you looking for?">
+                <span style="padding: 10px 20px;"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+            <div class="service-items"><i class="fa-solid fa-envelope"></i> <a href="#">Subscribe</a></div>
+            <div class="service-items"><i class="fa-solid fa-headphones"></i> <a href="#">Support</a></div>
+            <div class="service-items"><i class="fa-solid fa-user"></i> <a href="#">Login</a></div>
+            <div class="service-items"><i class="fa-solid fa-cart-shopping"></i> <a href="#">Cart</a></div>
+        </div>
+        <div class="nav-bar-Container">
+            <div class="left-side">
+                <div class="menu" onclick="onhoverShowMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                    <a href="#">Menu</a>
+                </div>
+                <div id="menu-slide" class="a">
+                    <i class="fa-solid fa-xmark close"></i>
+                    <img class="logo" src="https://motorolain.vtexassets.com/arquivos/motorola-logo.png" alt="">
+                    <ul>
+                        <li> <a href="#">Phones <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <div class="phone-list-menu">
+                            <h2>Motorola rarz</h2>
+                            <a href="#">Motorola <span style="font-weight: 700; color: #000;">rarz
+                                    50ultra</span><span
+                                    style="color: red; margin-left: 5px; font-size: 12px;">New</span></a>
+                            <a href="#">Motorola <span style="font-weight: 700; color: #000;">rarz
+                                    40ultra</span></a>
+                            <a href="#">Motorola <span style="font-weight: 700; color: #000;">rarz 40</span></a>
+                            <p>complete Family</p>
+                            <hr>
+                            <h2>Motorola edge</h2>
+                            <a href="#">motorola <span style="font-weight: 700; color: #000;">edge
+                                    50</span><span
+                                    style="color: red; margin-left: 5px; font-size: 12px;">New</span></span></a>
+                            <a href="#">motorola <span style="font-weight: 700; color: #000;">edge 40</span></a>
+                            <a href="#">motorola <span style="font-weight: 700; color: #000;">edge 50
+                                    Ultra</span></a>
+                            <a href="#">motorola <span style="font-weight: 700; color: #000;">edge 50
+                                    fusion</span></span><span
+                                    style="color: red; margin-left: 5px; font-size: 12px;">New</span></a>
+                            <a href="#">motorola <span style="font-weight: 700; color: #000;">edge 50
+                                    pro</span></span><span
+                                    style="color: red; margin-left: 5px; font-size: 12px;">New</span></a>
+                            <a href="#">motorola <span style="font-weight: 700; color: #000;">edge 40
+                                    neo</span></a>
+                            <a href="#">motorola <span style="font-weight: 700; color: #000;">edge 30
+                                    Ultra</span></a>
+                            <a href="#">motorola <span style="font-weight: 700; color: #000;">edge 30
+                                    fusion</span></a>
+                            <p>complete Family</p>
+                            <hr>
+                            <h2>Moto g</h2>
+                            <a href="#">moto <span style="font-weight: 700; color: #000;">g85 5g</span><span
+                                    style="color: red; margin-left: 5px; font-size: 12px;">New</span></a>
+                            <a href="#">moto <span style="font-weight: 700; color: #000;">g64 5g</span><span
+                                    style="color: red; margin-left: 5px; font-size: 12px;">New</span></a>
+                            <a href="#">moto <span style="font-weight: 700; color: #000;">g34 5g</span></a>
+                            <a href="#">moto <span style="font-weight: 700; color: #000;">g84 5g</span></a>
+                            <a href="#">moto <span style="font-weight: 700; color: #000;">g04s</span></a>
+                            <a href="#">moto <span style="font-weight: 700; color: #000;">g04</span></a>
+                            <a href="#">moto <span style="font-weight: 700; color: #000;">g24 power</span></a>
+                            <p>complete Family</p>
+                            <hr>
+                        </div>
+                        <li> <a href="#">Ear Buds <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li> <a href="#">Tablets <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li> <a href="#">Smart Tv & Audio <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li> <a href="#">Smart Applineces <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li> <a href="#">Compare</a></li>
+                        <li> <a href="#">blog hello<span style="font-weight: 700;">moto</span< /a>
+                        </li>
+                    </ul>
+
+                </div>
+                <nav class="nav">
+                    <ul class="ul">
+                        <li class="list-items"><a class="list-link" href="#">Phones <i
+                                    class="fa-solid fa-chevron-down"></i></a></li>
+                        <div class="phones-list ">
+                            <div class="col-6">
+                                <div class="col-3">
+                                    <h2>Motorola rarz</h2>
+                                    <a href="#">Motorola <span style="font-weight: 700; color: #000;">rarz
+                                            50ultra</span><span
+                                            style="color: red; margin-left: 5px; font-size: 12px;">New</span></a>
+                                    <a href="#">Motorola <span style="font-weight: 700; color: #000;">rarz
+                                            40ultra</span></a>
+                                    <a href="#">Motorola <span style="font-weight: 700; color: #000;">rarz 40</span></a>
+                                    <p>complete Family</p>
+                                </div>
+                                <div class="col-3">
+                                    <h2>Motorola edge</h2>
+                                    <a href="#">motorola <span style="font-weight: 700; color: #000;">edge
+                                            50</span><span
+                                            style="color: red; margin-left: 5px; font-size: 12px;">New</span></span></a>
+                                    <a href="#">motorola <span style="font-weight: 700; color: #000;">edge 40</span></a>
+                                    <a href="#">motorola <span style="font-weight: 700; color: #000;">edge 50
+                                            Ultra</span></a>
+                                    <a href="#">motorola <span style="font-weight: 700; color: #000;">edge 50
+                                            fusion</span></span><span
+                                            style="color: red; margin-left: 5px; font-size: 12px;">New</span></a>
+                                    <a href="#">motorola <span style="font-weight: 700; color: #000;">edge 50
+                                            pro</span></span><span
+                                            style="color: red; margin-left: 5px; font-size: 12px;">New</span></a>
+                                    <a href="#">motorola <span style="font-weight: 700; color: #000;">edge 40
+                                            neo</span></a>
+                                    <a href="#">motorola <span style="font-weight: 700; color: #000;">edge 30
+                                            Ultra</span></a>
+                                    <a href="#">motorola <span style="font-weight: 700; color: #000;">edge 30
+                                            fusion</span></a>
+                                    <p>complete Family</p>
+                                </div>
+                                <div class="col-3">
+                                    <h2>Moto g</h2>
+                                    <a href="#">moto <span style="font-weight: 700; color: #000;">g85 5g</span><span
+                                            style="color: red; margin-left: 5px; font-size: 12px;">New</span></a>
+                                    <a href="#">moto <span style="font-weight: 700; color: #000;">g64 5g</span><span
+                                            style="color: red; margin-left: 5px; font-size: 12px;">New</span></a>
+                                    <a href="#">moto <span style="font-weight: 700; color: #000;">g34 5g</span></a>
+                                    <a href="#">moto <span style="font-weight: 700; color: #000;">g84 5g</span></a>
+                                    <a href="#">moto <span style="font-weight: 700; color: #000;">g04s</span></a>
+                                    <a href="#">moto <span style="font-weight: 700; color: #000;">g04</span></a>
+                                    <a href="#">moto <span style="font-weight: 700; color: #000;">g24 power</span></a>
+                                    <p>complete Family</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="https://motorolain.vteximg.com.br/arquivos/smartphones-razr-family.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <li class="list-items"><a class="list-link" href="#">Ear Buds <i
+                                    class="fa-solid fa-chevron-down"></i></a></li>
+                        <div class="Ear-Buds-list">
+                            <div class="col-2">
+                                <img src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/c9a9cbc3-71b8-40c1-9929-29c487df67a7___40278db603afd4cb99aa5a81d1500702.png"
+                                    alt="img">
+                                <a href="#">moto buds+</a>
+                            </div>
+                            <div class="col-2">
+                                <img src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/827833c1-db5e-4e5c-b60a-7c9a117e3bad___2fd57f4472a573927a6bb6ee2bde750d.png"
+                                    alt="img">
+                                <a href="#">moto buds</a>
+                            </div>
+                        </div>
+                        <li class="list-items"><a class="list-link" href="#">Tablets <i
+                                    class="fa-solid fa-chevron-down"></i></a></li>
+                        <div class="Tab-list">
+                            <div class="col-1">
+                                <img src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/5020bb3b-9374-49fa-b9ba-557b727c03d2___2fc815624f40189d44a09612200d0e8c.png"
+                                    alt="img">
+                                <a href="#">moto tab g70</a>
+                            </div>
+                            <div class="col-1">
+                                <img src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/e6fd4b10-9f63-492d-8edc-454828cb9cbf___1ec963d00c4a58e2c43de88815c4ae52.png"
+                                    alt="img">
+                                <a href="#">moto tab g62</a>
+                            </div>
+                            <div class="col-1">
+                                <img src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/06dbb48c-39b7-49cc-aaa1-3d56d02edcc2___1ec963d00c4a58e2c43de88815c4ae52.png"
+                                    alt="img">
+                                <a href="#">moto tab g62 LITE</a>
+                            </div>
+                            <div class="col-1">
+                                <img src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/ceda6f7e-b382-4322-83e6-cfa25ebd0772___9e9cbf1bb760fead61ba0301e768dc44.png"
+                                    alt="img">
+                                <a href="#">moto tab g20</a>
+                            </div>
+                            <div class="col-1">
+                                <img src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/3924ce04-ab1f-44bb-a67e-4370265d5ce0___464e8fe4c5432e29230893dbf640b5d7.png"
+                                    alt="img">
+                                <a href="#">View All Tablets</a>
+                            </div>
+                        </div>
+                        <li class="list-items"><a class="list-link" href="#">Smart Tv & Audio <i
+                                    class="fa-solid fa-chevron-down"></i></a></li>
+                        <div class="Smart-Tv-list">
+                            <div class="col-1">
+                                <img src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/3f609297-c768-4c6f-a215-1b0310814057___db0dd6fd559e83ce3cf42e3d56d112a6.webp"
+                                    alt="img">
+                                <a href="#">All TVs</a>
+                            </div>
+                            <div class="col-1">
+                                <img src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/4c32f6c1-cd3f-4a3a-9926-80f47975724e___24614b8543e19fb817dcd4d74fe9743d.png"
+                                    alt="img">
+                                <a href="#">Envison X</a>
+                            </div>
+                            <div class="col-1">
+                                <img src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/4c32f6c1-cd3f-4a3a-9926-80f47975724e___24614b8543e19fb817dcd4d74fe9743d.png"
+                                    alt="img">
+                                <a href="#">AmpishoundX Home Audio</a>
+                            </div>
+                        </div>
+                        <li class="list-items"><a class="list-link" href="#">Smart Applineces <i
+                                    class="fa-solid fa-chevron-down"></i></a></li>
+                        <div class="Smart-Applineces-list">
+                            <div class="col-1">
+                                <img src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/a1abf4e3-c1a3-4180-9587-e3b299407120___aee957f3fdf4cb897b270500351ba7f2.png"
+                                    alt="img">
+                                <a href="#">Refrigater</a>
+                            </div>
+                            <div class="col-1">
+                                <img src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/2b45444b-0b51-4518-9f4a-ae083874d0e0___e187c1db55d899e876c4d259ece400ca.png"
+                                    alt="img">
+                                <a href="#">Washing Machines</a>
+                            </div>
+                            <div class="col-1">
+                                <img src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/6dcdb631-7e84-488f-8b8c-d6e4226e4a3f___8b647e9042a5eee47834bfca7be8150b.png"
+                                    alt="img">
+                                <a href="#">motorola smart air condition</a>
+                            </div>
+                            <div class="col-1">
+                                <img src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/c484728e-1bc8-4f30-a4eb-2623c89e5634___8a9c6dabbf0c9ad0d26c8e7ad7ea7b49.webp"
+                                    alt="img">
+                                <a href="#">motorola 4-in-1 convartable inverter AC</a>
+                            </div>
+                            <div class="col-1">
+                                <img src="https://motorolain.vtexassets.com/assets/vtex.file-manager-graphql/images/66c677b5-dc4d-4649-be39-b62c88d5c28b___b3f37596cde8c6ad840cb3c769c2592f.png"
+                                    alt="img">
+                                <a href="#">motorola media stick</a>
+                            </div>
+                        </div>
+                        <li class="list-items"><a class="list-link" href="#">Compare</a></li>
+                        <li class="list-items"><a class="list-link" href="#">blog hello<span
+                                    style="font-weight: 700;">moto</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right-side">
+                <a href="#">Free Shipping*</a>
+                <a href="#">Fast Delivery*</a>
+            </div>
+        </div>
+    </header>
+    <div class="pages-header">
+        <img src="https://motorolain.vtexassets.com/arquivos/razr-50-ultra-ROW-lockup-logo-white-7cgtrq2g-1.svg" alt="">
+        <ul>
+            <li>BUY NOW</li>
+            <li>DISPLAY</li>
+            <li>CAMERA</li>
+        </ul>
+        <h4>MRP <span style="text-decoration: line-through;">₹1,19,000.00</span> (Inclusive of all taxes)</h4>
+        <p>₹94,999.00</p>
+        <button>Add To Cart</button>
+    </div>
+    <div class="phone-page">
+        <div class="phone-image">
+            <div class="phone-image-box">
+                <div class="phone-small-images">
+                    <div class="small-img-box">
+                        <img onclick="ChangeProductImg(this)" src="https://motorolain.vtexassets.com/arquivos/ids/159058-800-auto?width=800&height=auto&aspect=true"
+                            alt="">
+                    </div>
+                    <div class="small-img-box">
+                        <img onclick="ChangeProductImg(this)" src="https://motorolain.vtexassets.com/arquivos/ids/159059-800-auto?width=800&height=auto&aspect=true"
+                            alt="">
+                    </div>
+                    <div class="small-img-box">
+                        <img onclick="ChangeProductImg(this)" src="https://motorolain.vtexassets.com/arquivos/ids/159060-800-auto?width=800&height=auto&aspect=true"
+                            alt="">
+                    </div>
+                    <div class="small-img-box">
+                        <img onclick="ChangeProductImg(this)"  src="https://motorolain.vtexassets.com/arquivos/ids/159061-800-auto?width=800&height=auto&aspect=true"
+                            alt="">
+                    </div>
+                    <div class="small-img-box">
+                        <img onclick="ChangeProductImg(this)" src="https://motorolain.vtexassets.com/arquivos/ids/159062-800-auto?width=800&height=auto&aspect=true"
+                            alt="">
+                    </div>
+                </div>
+                <div class="phone-main-image">
+                    <img id="MainImgProduct" src="https://motorolain.vtexassets.com/arquivos/ids/159058-800-auto?width=800&height=auto&aspect=true"
+                        alt="">
+                </div>
+                <div class="shipping-main-box">
+                    <div class="shipping-small-box" style="border-right: 1px solid black;">
+                        <i class="fa-solid fa-mobile"></i>
+                        <p>Compare</p>
+                    </div>
+                    <div class="shipping-small-box" style="border-right: 1px solid black;">
+                        <i class="fa-solid fa-box-archive"></i>
+                        <p>Free Shipping</p>
+                    </div>
+                    <div class="shipping-small-box">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <p>Fast Delivery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-detail-box">
+            <div class="product-image-box">
+                <img src="https://motorolain.vtexassets.com/arquivos/motorola-logo.png" alt="">
+            </div>
+            <div class="heading-box">
+                <h4>FLIP THE SCRIPT</h4>
+                <h5>INTELLIGENCE INSIDE AND OUT</h5>
+                <p>Color: Peach Fuzz</p>
+            </div>
+            <div class="color-box">
+                <div  onclick="BluePhoneColor()" class="product-color">
+                    <p>Midnight Blue</p>
+                    <div class="color-small-box"></div>
+                </div>
+                <div onclick=" PeachFuzzColor()" class="product-color">
+                    <p>Peach Fuzz</p>
+                    <div class="color-small-box" style="background-color: #B07F62;"></div>
+                </div>
+                <div onclick="GreenPhoneColor()" class="product-color" style="margin-right: 255px;">
+                    <p>Spring Green</p>
+                    <div class="color-small-box" style="background-color: #374F2F;"></div>
+                </div>
+            </div>
+            <div class="storage-box">
+                <p>Storage :</p>
+                <div class="product-storage">
+                    <p>12GB/512GB</p>
+                </div>
+                <div class="pincode-box">
+                    <p>Check Delivery :</p>
+                    <input type="text" placeholder="Pin-Code">
+                </div>
+            </div>
+            <div class="offer-box">
+                <div class="offer-main-box">
+                    <div class="main-offers">
+                        <p><i class="fa-solid fa-tag"></i>
+                            <span
+                                style="font-size: 19px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">₹5,000
+                                instant discount</span> on HDFC and Axis Bank Credit Card <span
+                                style="color: red; margin-left: 20px; font-weight: lighter; ">T&C </span>
+                        </p>
+                    </div>
+                    <div class="main-offers" style="border-bottom: 2px dashed #9e9696;">
+                        <p><i class="fa-solid fa-tag"></i>
+                            <span
+                                style="font-size: 19px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">18
+                                months No Cost EMI</span> on HDFC and Axis Bank Credit Card & CC EMI <span
+                                style="color: red; margin-left: 20px; font-weight: lighter; ">T&C </span>
+                        </p>
+                    </div>
+                    <div class="view-offer-box">
+                        <a href="">View more Offers></a>
+                    </div>
+                </div>
+                <div class="plans-box">
+                    <div class="plan-content">
+                        <p>Get <span style="font-weight: bolder;">Credit Card EMIs</span> <br>
+                            on 16+ Banks
+                        </p>
+                    </div>
+                    <div class="plan-content-box">
+                        <img src="https://widget.payu.in/assets/images/icon/bank-icons/hdfc.svg" alt="">
+                        <img src="https://widget.payu.in/assets/images/icon/bank-icons/utib.svg" alt="">
+                        <img src="https://widget.payu.in/assets/images/icon/bank-icons/icic.svg" alt="">
+                        <p>& more</p>
+                        <a href="">VIEW PLANS ></a>
+                    </div>
+                </div>
+                <div class="plans-box">
+                    <div class="plan-content">
+                        <p>Check <span style="font-weight: bolder;">Debit Card & Cardless EMI</span>options</p>
+                    </div>
+                    <div class="plan-content-box">
+                        <img src="https://widget.payu.in/assets/images/icon/bank-icons/icic.svg" alt="">
+                        <img src="https://widget.payu.in/assets/images/icon/bank-icons/kkbk.svg" alt="">
+                        <img src="https://widget.payu.in/assets/images/icon/bank-icons/hdfc.svg" alt="">
+                        <p>& more</p>
+                        <a href="">CHECK OPTIONS ></a>
+                    </div>
+                </div>
+                <div class="more-offer-box">
+                    <div class="discount-box">
+                        <i class="fa-solid fa-percent"></i>
+                    </div>
+                    <div class="offer-content">
+                        <h5>OFFERS</h5>
+                        <p>Check offers according to your payment options & save more</p>
+                        <button class="offer-btn">SHOW OFFERS ></button>
+                    </div>
+                </div>
+                <div class="product-price-box">
+                    <h4>MRP <span style="text-decoration: line-through;">₹1,19,000.00</span> (Inclusive of all taxes)
+                    </h4>
+                    <h6>₹69,999.00</h6>
+                    <button class="price-btn">Add to cart</button>
+                    <button class="price-btn" style="margin-left: 30px;">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="sript.js"></script>
+</body>
+</html>
