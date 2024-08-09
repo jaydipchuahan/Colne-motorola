@@ -895,7 +895,6 @@
     flex-direction: column;
     gap: 10px;
 }
-
 .seaching-container .search .phone-suggestion a {
     text-decoration: none;
     color: #363636;
@@ -1026,6 +1025,8 @@ footer .social-media-section .location img {
 footer .social-media-section .location a {
     color: black;
     font-size: 18px;
+    text-decoration: underline;
+    letter-spacing: .5px;
 }
 
 .support-container {
@@ -1053,6 +1054,11 @@ footer .social-media-section .location a {
     font-size: 16px;
     margin-bottom: 7px;
     color: #36363691;
+    transition: .3s;
+}
+
+.support-container .col-2 a:hover {
+    color: #363636ef;
 }
 
 .support-container .col-2 img {
