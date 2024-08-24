@@ -5,7 +5,11 @@
     text-decoration: none;
 }
 
-
+body{
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+}
 #cursor {
     z-index: 1;
     width: 30px;
@@ -90,7 +94,10 @@
 
 .Header .Header-Top .input-group {
     display: flex;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.281);
+    /* border: .1px solid rgba(0, 0, 0, 0.075); */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.13);
+    /* box-shadow:  20px 20px 60px rgba(0, 0, 0, 0.192),
+    inset -20px -20px 60px rgba(255, 255, 255, 0.288); */
     border-radius: 10px;
     overflow: hidden;
 }
@@ -895,6 +902,7 @@
     flex-direction: column;
     gap: 10px;
 }
+
 .seaching-container .search .phone-suggestion a {
     text-decoration: none;
     color: #363636;
@@ -1025,8 +1033,6 @@ footer .social-media-section .location img {
 footer .social-media-section .location a {
     color: black;
     font-size: 18px;
-    text-decoration: underline;
-    letter-spacing: .5px;
 }
 
 .support-container {
@@ -1054,11 +1060,6 @@ footer .social-media-section .location a {
     font-size: 16px;
     margin-bottom: 7px;
     color: #36363691;
-    transition: .3s;
-}
-
-.support-container .col-2 a:hover {
-    color: #363636ef;
 }
 
 .support-container .col-2 img {
@@ -1124,6 +1125,7 @@ footer .social-media-section .location a {
     padding: 10px;
     background-color: #333B42;
     display: flex;
+    z-index: 2;
     align-items: center;
     position: sticky;
     top: 150px;
@@ -1190,9 +1192,6 @@ footer .social-media-section .location a {
     height: 80vh;
     padding: 10px;
     margin-left: 100px;
-    position: fixed;
-    top: 230px;
-    left: 0%;
     padding-right: 40px;
 }
 
@@ -1601,6 +1600,376 @@ footer .social-media-section .location a {
     border-radius: 10px;
     margin-top: 10px;
 }
+.highlight-container {
+    margin-top: 180PX;
+    padding: 200px 0;
+    position: sticky;
+}
+
+.highlight-container h2 {
+    margin-left: 200px;
+    font-size: 3.1vw;
+    margin-bottom: 24px;
+
+}
+
+.row {
+    width: fit-content;
+    display: flex;
+    gap: 20px;
+    padding-left: 200px;
+    overflow: hidden;
+}
+
+.row .highlight-box {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    height: 350px;
+    width: 550px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.486);
+}
+
+.row .highlight-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row .highlight-box h3 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 4vh;
+
+}
+
+.more-highlight {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.row .highlight-box svg {
+    transform: scale(1.5)
+}
+
+.container-box {
+    margin-top: 50px;
+    position: absolute;
+    left: 200px;
+    width: 500px;
+    height: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.container-box .swipder-box {
+    width: 25px;
+    height: 25px;
+    background-color: gray;
+    border-radius: 50%;
+    transition: .5s ease;
+}
+
+.incress {
+    width: 60px;
+    border-radius: 20px;
+    background-color: gray;
+
+}
+
+.navigation-btn {
+    margin-top: 50px;
+    position: absolute;
+    right: -270px;
+    width: 500px;
+    height: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.navigation-btn .circle {
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.navigation-btn .circle:active {
+    background-color: white;
+    border: 1px solid transparent;
+}
+
+.navigation-btn .circle svg {
+    transform: scale(.7);
+}
+
+.large-box {
+    margin-top: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.large-box h1 {
+    font-size: 4.2vw;
+    text-align: center;
+}
+
+.About-Product {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.About-Product img {
+    width: 450px;
+}
+
+.About-Product p {
+    font-size: 1vw;
+    text-align: center;
+    color: #001428;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.About-Product button {
+    padding: 10px 40px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    background-color: #001428;
+    color: aliceblue;
+    cursor: pointer;
+    border: 1px solid #001428;
+    transition: .2s ease;
+    font-weight: 400;
+
+}
+
+.About-Product button:hover {
+    background-color: transparent;
+    color: #001428;
+    border: 1px solid #001428;
+    font-weight: 400;
+
+}
+
+.the-icone-marker {
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.the-icone-marker h2 {
+    font-size: 5vw;
+    margin-left: -20px;
+    text-transform: capitalize;
+}
+
+.product-item-img-container {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.product-item-img-container .left .img-product {
+    width: 550px;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 22px;
+    position: relative;
+}
+
+.product-item-img-container .left .img-product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-item-img-container .left .img-product h3 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2vw;
+    color: white;
+}
+
+.product-item-img-container .left .img-product .circle {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.product-item-img-container .left .img-product .circle svg {
+    transform: scale(1.8);
+}
+
+.product-item-img-container .left .color-box {
+    width: 350px;
+    margin-top: 30px;
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.product-item-img-container .left .color-box .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: .2s ease;
+}
+
+.product-item-img-container .left .color-box .circle:hover::after {
+    border: 1px solid rgb(61, 154, 185);
+}
+
+.product-item-img-container .left .color-box .circle::after {
+    content: "";
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+
+}
+
+.product-item-img-container .right {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.product-item-img-container .right .img-phone {
+    width: 550px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-item-img-container .right .img-phone img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-item-img-container .right .img-phone h3 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2vw;
+    color: white;
+}
+
+.product-item-img-container .right .img-phone .circle {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.product-item-img-container .left .img-product .circle svg {
+    transform: scale(1.8);
+}
+
+.about-phone {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+.about-phone .container-fluid {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-phone .container-fluid .col-6:nth-child(1) {
+    padding-top: 100px;
+   margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-phone .container-fluid .col-6:nth-child(2) {
+    width: 550px;
+    height: 550px;
+}
+
+.about-phone .container-fluid .col-6 h1 {
+    font-size: 4vw;
+}
+
+.about-phone .container-fluid .col-6 p {
+    width: 500px;
+    font-size: 1vw;
+    color: #2F3856;
+}
+
+.about-phone .container-fluid .col-6 a {
+    font-size: 1.05vw;
+    color: #001428;
+    font-weight: 600;
+}
+
+.about-phone .container-fluid .col-6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
 
 /* tablate size */
 @media only screen and (max-width: 768px) {
