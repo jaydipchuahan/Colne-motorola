@@ -1,7 +1,7 @@
 // Cursor Move 
 let main = document.querySelector("body");
 let cursor = document.querySelector("#cursor");
-
+ 
 main.addEventListener("mousemove", function (ME) {
     gsap.to(cursor, {
         x: ME.x,
@@ -13,7 +13,8 @@ gsap.from(".Phone-Models", {
     scrollTrigger: {
         trigger: ".Phone-Models",
         scroller: "body",
-        start: "top 80%"
+        start: "top 80%",
+        
     },
     y: 200,
     opacity: 0,
@@ -321,3 +322,50 @@ function GreenPhoneColor() {
     AllProductImg[3].src = "https://motorolain.vtexassets.com/arquivos/ids/159054-1200-auto?width=1200&height=auto&aspect=true"
     AllProductImg[4].src = "https://motorolain.vtexassets.com/arquivos/ids/159055-1200-auto?width=1200&height=auto&aspect=true"
 }
+const leftButton = document.getElementsByClassName('leftButton')[0];
+const rightButton = document.getElementsByClassName('rightButton')[0];
+const images = document.querySelectorAll('.highlight-box');
+let currentOffset = 0;
+
+function left() {
+    if (currentOffset <= -100) {
+        currentOffset += 100;
+    }
+    if (currentOffset <= 0) {
+        images.forEach(image => {
+            image.style.transform = `translateX(${currentOffset}%)`;
+            image.style.transition = '.5s';
+        });
+        console.log(currentOffset);
+    }
+}
+function right() {
+    if (currentOffset >= -400) {
+        currentOffset -= 100;
+    }
+    if (currentOffset >= -400)
+        images.forEach(image => {
+            image.style.transform = `translateX(${currentOffset}%)`;
+            image.style.transition = '.5s';
+        });
+    console.log(currentOffset);
+
+}
+// Add event listeners to buttons
+leftButton.addEventListener('click', left);
+rightButton.addEventListener('click', right);
+
+// product 
+
+gsap.to(".phone-image-box", {
+    y: 600,
+    duration: 5,
+    scrollTrigger: {
+        trigger: ".phone-image-box",
+        scroller:"body",
+        markers:true,
+        start: 55,
+        end: 600,
+        scrub: 1.5
+    }
+})
